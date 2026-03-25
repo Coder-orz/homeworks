@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('/hm03/img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.login-container {
+  /* display: flex; */
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 450px;
+  /* border-radius: 10px; */
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.login-head {
+  background-color: #6d4a70;
+  color: white;
+  padding: 20px;
+  display: flex;
+  /* border-radius: 10px 10px 0 0; */
+  height: 90px;
+
+  align-items: center;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
