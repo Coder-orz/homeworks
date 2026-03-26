@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* 背景 */
 body {
   background-image: url('/hm03/img/bg.jpg');
   background-repeat: no-repeat;
@@ -12,6 +13,7 @@ body {
   background-size: cover;
 }
 
+/* 登录盒子容器 */
 .login-container {
   /* display: flex; */
   margin-top: 100px;
@@ -19,28 +21,95 @@ body {
   margin-right: auto;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  height: 450px;
+  width: 440px;
+  height: 360px;
   /* border-radius: 10px; */
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
   background-color: white;
 }
 
+/* 标题部分 */
 .login-head {
   background-color: #6d4a70;
   color: white;
   padding: 20px;
   display: flex;
   /* border-radius: 10px 10px 0 0; */
-  height: 90px;
+  height: 80px;
 
   align-items: center;
 }
 
+/* 表单部分 */
 .login-form {
   width: 100%;
+  margin-top: 40px;
 }
 
+/* 输入框容器 */
+.form-group {
+  margin-bottom: 10px;
+  position: relative;
+  padding: 0 30px;
+}
+/* 输入框 */
+.form-group input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+/* 输入框焦点状态 */
+.form-group input:focus {
+  border-color: #6d4a70;
+}
+/* 图标 */
+.form-group .icon {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* 设置图标颜色  */
+  filter: grayscale(100%)
+  opacity(0.7)
+}
+
+/* 按钮容器 */
+.form-actions {
+  float: left;
+  margin-left: 30px;
+  align-items: center;
+  margin-top: 45px;
+}
+/* 按钮 */
+.sign-in-btn {
+  background-color: #6d4a70;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 20px;
+}
+.sign-in-btn:hover {
+  background-color: #5a3f70;
+}
+
+/* 忘记密码 */
+.forgot-password {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+}
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* 版权信息 */
 .copyright {
   margin-top: 20px;
   text-align: center;
