@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- 登录盒子容器 -->
+  <div class="login-form-container">
+    <!-- 头像盒子 -->
+    <div class="login-form-header">
+      <div class="user-icon">
+        <img src="./img/head.png" alt="">
+      </div>
+    </div>
+    <!-- 表单盒子 -->
+    <form class="login-form-content" id="loginForm">
+      <!-- 用户名输入框 -->
+      <div class="login-form-group">
+        <img class="icon" src="./img/login_user.png" alt="">
+        <input class="input" type="text" id="username" placeholder="用户名（有效手机号）">
+      </div>
+      <!-- 密码输入框 -->
+      <div class="login-form-group">
+        <img class="icon" src="./img/login_pas.png" alt="">
+        <input class="input" type="password" id="password" placeholder="密码（至少6个字符，只允许字母和数字）">
+      </div>
+      <!-- 登录按钮 -->
+      <div class="login-button" id="loginBtn">
+        登录
+      </div>
+      <!-- 记住我选项 -->
+      <div class="remember-me">
+        <input type="checkbox" id="remember-me">
+        <label for="remember-me">记住我</label>
+      </div>
+    </form>
+    
+    
+  </div>
+
+  <script src="./js/validate.js"></script>
+</body>
+</html>

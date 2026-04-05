@@ -1,0 +1,124 @@
+/* 统一样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 设置背景 */
+body {
+  background: url(../img/login_bg_0.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* 登录盒子容器 */
+.login-form-container {
+  /* 背景 */
+  background: url(../img/login_bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* 宽高和位置 */
+  width: 477px;
+  height: 479px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+/* 头像盒子 */
+.login-form-header {
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 用户头像 */
+.user-icon {
+  width: 120px;
+  height: 120px;
+  
+}
+.user-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+/* 动画 */
+.user-icon img:hover {
+  transform: rotate(360deg);
+}
+
+/* 表单盒子 */
+.login-form-content {
+  height: 230px;
+  padding-top: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+/* 输入框样式 */
+.login-form-group {
+  background-color: #bbbbbb;
+  margin: auto;
+  height: 45px;
+  margin-bottom: 10px;
+  /* 输入框和图标垂直居中对齐 */
+  display: flex;
+  align-items: center;
+}
+.login-form-group img {
+  background-color: white;
+  width: 45px;
+  height: 45px;
+}
+.login-form-group input {
+  width: 100%;
+  height: 45px;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+}
+/* 登录按钮 */
+.login-button {
+  background-color: orange;
+  margin: auto;
+  height: 45px;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+  line-height: 45px;
+  font-size: 18px;
+}
+.login-button:hover {
+  background-color: rgb(225, 147, 0);
+}
+
+/* 记住我选项 */
+.remember-me {
+
+}
+
+/* 错误提示样式 */
+.error-message {
+  color: #ff4444;
+  font-size: 12px;
+  padding-left: 55px;
+  margin-bottom: 5px;
+  min-height: 18px;
+}
+
+/* 输入框验证失败样式 */
+.login-form-group.error {
+  background-color: #ffcccc;
+  border: 1px solid #ff4444;
+}
+
+/* 输入框验证成功样式 */
+.login-form-group.success {
+  background-color: #ccffcc;
+}
